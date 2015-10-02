@@ -33,11 +33,13 @@ an optional "## num ##" -- the default is 25 images in the stack
 -## heightsdir ## -- directory where a set of csvs, corresponding to each time point, are stored. There's given to where this directory might be because it often happens that we process our adhesion heights in a completely separate workflow. so it's not tied to be under the same home directory as the images themselves. 
 
 __________________Dependencies/Python Packages Needed:___________________________________
+
 numpy
 scipy
 PIL (Image, matplotlib)
 
 mahotas and pymorph-- available through easy_install or pip, on PyPI 
+
 --these are well documented computer vision libraries 
 https://pypi.python.org/pypi/pymorph
 https://pypi.python.org/pypi/mahotas/1.0.3
