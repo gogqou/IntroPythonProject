@@ -9,7 +9,7 @@ python process_images.py '/home/exampledata/cell1/' cell1 _c .tif '/home/randomd
 
 
 
-****LONGER EXPLANATION:****
+                            LONGER EXPLANATION:
 
 This code is setup to process an entire data set of time series images, for each time point of which a stack of size "num" was taken
 
@@ -18,19 +18,19 @@ ___________________________Arguments:_____________________________
 
 It takes five arguments:
 
-## directory ## -- where images should be -- that is, if there are images c1.tif, c2.tif, etc at /home/dir/images/cell1/t1/cell1t1_c1.tif,/home/dir/images/c2.tif..., home_dir = '/home/dir/images/cell1/'
+-## directory ## -- where images should be -- that is, if there are images c1.tif, c2.tif, etc at /home/dir/images/cell1/t1/cell1t1_c1.tif,/home/dir/images/c2.tif..., home_dir = '/home/dir/images/cell1/'
 
 
-## dataset ##--which identifies the label for the data set being processed;
+-## dataset ##--which identifies the label for the data set being processed;
 	it assumes that there is a naming scheme for each image that includes the dataset name, then the subfolder name under which the image is stored	
 	--in our example, dataset = 'cell1'
 
-## basename ## -- in our example, this would be '_c'; it is whatever identifier might be added onto dataset+subfolder, like NIS elements does when collecting stacks
+-## basename ## -- in our example, this would be '_c'; it is whatever identifier might be added onto dataset+subfolder, like NIS elements does when collecting stacks
 
 
 an optional "## num ##" -- the default is 25 images in the stack
 
-## heightsdir ## -- directory where a set of csvs, corresponding to each time point, are stored. There's given to where this directory might be because it often happens that we process our adhesion heights in a completely separate workflow. so it's not tied to be under the same home directory as the images themselves. 
+-## heightsdir ## -- directory where a set of csvs, corresponding to each time point, are stored. There's given to where this directory might be because it often happens that we process our adhesion heights in a completely separate workflow. so it's not tied to be under the same home directory as the images themselves. 
 
 __________________Dependencies/Python Packages Needed:___________________________________
 numpy
